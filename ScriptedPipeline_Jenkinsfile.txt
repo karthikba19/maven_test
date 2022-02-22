@@ -22,6 +22,7 @@ node('master')
       input message: 'Waiting for approval from DM', submitter: 'Srinivas'
     sh 'scp /var/lib/jenkins/workspace/Pipeline/webapp/target/webapp.war vagrant@13.233.69.178:/var/lib/tomcat9/webapps/prodenv.war'
   }
+}  
   
   
   
@@ -29,5 +30,4 @@ node('master')
   
   
   
-  
-}
+
